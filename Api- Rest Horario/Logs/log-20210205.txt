@@ -1,0 +1,14 @@
+2021-02-05 20:26:10.637 |  | INFO |  | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001
+2021-02-05 20:26:10.730 |  | INFO |  | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000
+2021-02-05 20:26:10.735 |  | INFO |  | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down.
+2021-02-05 20:26:10.740 |  | INFO |  | Microsoft.Hosting.Lifetime | Hosting environment: Development
+2021-02-05 20:26:10.745 |  | INFO |  | Microsoft.Hosting.Lifetime | Content root path: C:\Users\ctorres\Documents\Desarrollo\EjercicioEntrega\replica 2\Api- Rest Horario
+2021-02-05 20:26:53.858 |  | WARN |  | Microsoft.EntityFrameworkCore.Model.Validation | Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2021-02-05 20:27:21.788 |  | INFO |  | WebApiHorarios.Controllers.HorarioController | Fallo en la busqueda del negocio: 2 -- Problema: Year, Month, and Day parameters describe an un-representable DateTime.
+2021-02-05 20:28:51.218 |  | INFO |  | Microsoft.Hosting.Lifetime | Application is shutting down...
+2021-02-05 20:34:46.347 |  | INFO |  | Microsoft.Hosting.Lifetime | Now listening on: https://localhost:5001
+2021-02-05 20:34:46.428 |  | INFO |  | Microsoft.Hosting.Lifetime | Now listening on: http://localhost:5000
+2021-02-05 20:34:46.435 |  | INFO |  | Microsoft.Hosting.Lifetime | Application started. Press Ctrl+C to shut down.
+2021-02-05 20:34:46.442 |  | INFO |  | Microsoft.Hosting.Lifetime | Hosting environment: Development
+2021-02-05 20:34:46.448 |  | INFO |  | Microsoft.Hosting.Lifetime | Content root path: C:\Users\ctorres\Documents\Desarrollo\EjercicioEntrega\replica 2\Api- Rest Horario
+2021-02-05 20:35:05.187 |  | WARN |  | Microsoft.EntityFrameworkCore.Model.Validation | Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.

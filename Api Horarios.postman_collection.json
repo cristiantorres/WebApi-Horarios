@@ -1,0 +1,20 @@
+{
+	"info": {
+		"_postman_id": "f83bc1f6-3ada-4a1d-a021-7094948f90c3",
+		"name": "Api Horarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Horario Por Fecha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
