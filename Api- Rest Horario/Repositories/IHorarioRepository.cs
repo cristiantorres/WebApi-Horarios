@@ -12,9 +12,8 @@ namespace WebApiHorarios.Repositories
         
         Task<Horario>  GetHorario(int negocio, DiaDeSemana diaSemana);
         List<Horario> GetHorarios();
-
-        void Insert(Horario user);
-        void Update(Horario user);
+        void Insert(Horario horario);
+        void Update(Horario horario);
         void Save();
     }
 }
