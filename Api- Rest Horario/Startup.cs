@@ -17,6 +17,7 @@ using WebApiHorarios.Repositories;
 using Serilog;
 using Microsoft.Extensions.Logging;
 using WebApiHorarios.Data;
+using Microsoft.OpenApi.Models;
 
 namespace WebApiHorarios
 {
@@ -40,6 +41,42 @@ namespace WebApiHorarios
             services.AddControllers();
       
             services.AddMvc();
+            services.AddSwaggerGen(config =>
+            {
+                var titleBase = "Movies API";
+                var description = "This is a Web API for Movies operations";
+                var TermsOfService = new Uri("https://udemy.com/user/felipegaviln/");
+                var License = new OpenApiLicense()
+                {
+                    Name = "MIT"
+                };
+                var Contact = new OpenApiContact()
+                {
+                    Name = "Felipe Gavilán",
+                    Email = "felipe_gavilan887@hotmail.com",
+                    Url = new Uri("https://gavilan.blog/")
+                };
+
+                config.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = titleBase + " v1",
+                    Description = description,
+                    TermsOfService = TermsOfService,
+                    License = License,
+                    Contact = Contact
+                });
+
+                config.SwaggerDoc("v2", new OpenApiInfo
+                {
+                    Version = "v2",
+                    Title = titleBase + " v2",
+                    Description = description,
+                    TermsOfService = TermsOfService,
+                    License = License,
+                    Contact = Contact
+                });
+            });
         }
  
 
@@ -62,6 +99,15 @@ namespace WebApiHorarios
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(config =>
+            {
+                config.SwaggerEndpoint("/swagger/v1/swagger.json", "MoviesAPI v1");
+                //config.SwaggerEndpoint("/swagger/v2/swagger.json", "MoviesAPI v2");
             });
         }
     }
